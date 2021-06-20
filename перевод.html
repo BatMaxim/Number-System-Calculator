@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Converter</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+	<form id="converter" class="converter">
+		<label class="converter__input">Число: <input name="number" size="20"placeholder="123AFC"></label>
+		<label class="converter__input">Cистема счисления: <input name="inNumSystem" type="number" placeholder="(2-16)"></label>
+		<label class="converter__input">В какую:<input name="outNumSystem" type="number" placeholder="(2-16)"></label>
+		<button class="converter__btn" type="submit">Перевести</button> 
+		<label class="converter__input">Ответ:<input name="answer" readonly></label>
+		<button class="converter__btn" type="reset">Сброс</button>
+	</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

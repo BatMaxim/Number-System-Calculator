@@ -1,0 +1,35 @@
+input {
+    width: 250px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+}
+
+.converter__input:not(:first-child) {
+    margin-top: 10px;
+}
+
+.converter__input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.converter__btn {
+    margin-top: 10px;
+}
