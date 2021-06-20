@@ -1,6 +1,6 @@
-export function checkInputNumber(parsNumRev, inNumSystem){
+export function checkInputNumber(parsNumRev, inputNumSystem){
     for(let i = 0; i < parsNumRev.length; i++){
-        if(isNaN(parsNumRev[i]) || parsNumRev[i] >= inNumSystem) {
+        if(isNaN(parsNumRev[i]) || parsNumRev[i] >= inputNumSystem) {
             console.log(parsNumRev[i]);
             return false;
         }
@@ -8,8 +8,7 @@ export function checkInputNumber(parsNumRev, inNumSystem){
     return true;
 }
 
-export function checkNumSystems(inNumSystem, outNumSystem){
-    let cond = inNumSystem > 16 || inNumSystem < 2 || outNumSystem > 16 || outNumSystem < 2;
-    return cond ? false : true;  
+export function checkNumSystems(NumSystem){
+    return NumSystem <= 16 && NumSystem >= 2; 
 }
 
