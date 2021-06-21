@@ -1,5 +1,4 @@
-const numsArray = [['A', 10], ['B', 10],['C', 10],['D', 10],['E', 10],['F', 10]];
-let numsMap = new Map(numsArray);
+let numsMap = new Map( [['A', 10], ['B', 11],['C', 12],['D', 13],['E', 14],['F', 15]]);
 
 export function  convertToDecimal(parsNumRev, inNumSystem){
     let number = 0; 

@@ -1,11 +1,12 @@
-import {convertToDecimal, convertToOtherSystem, convertNumsArray, getKeyByValue, getValueByKey} from './Conversions.js';
-import {checkNumSystems, checkInputNumber} from './Checks.js';
+import {convertToDecimal, convertToOtherSystem, convertNumsArray, getKeyByValue, getValueByKey} from './conversions.js';
+import {checkNumSystems, checkInputNumber} from './checks.js';
 
 const form = document.querySelector("#converter")
 form.addEventListener("submit", (event) => {
 	event.preventDefault();
 	convert();
 });
+
 
 function convert() {
 	let number =  form.querySelector('[name="number"]').value.trim();
